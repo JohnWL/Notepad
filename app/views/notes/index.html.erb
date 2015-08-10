@@ -2,4 +2,5 @@
   <h2><%= link_to n.title, n %></h2>
   <p>Created <%= time_ago_in_words(n.created_at) %> ago</p>
   <p><%= n.content %></p>
-<% end %>  
+<% end %>
+<%= link_to "Add Note", new_note_path %>
