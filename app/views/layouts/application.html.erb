@@ -4,13 +4,14 @@
   <title>Notepad</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
   <%= csrf_meta_tags %>
 </head>
 <body>
   
 <header>
   <div class="header_inner">
-    <%= link_to image_tag( 'logo3.png'), root_path, id: "logo" %>
+    <%= link_to "NOTEPAD", root_path, class: "brand-name" %>
     <nav>
       <% if user_signed_in? %>
         <%= link_to "Add Note", new_note_path %>

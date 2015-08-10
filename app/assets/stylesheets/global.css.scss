@@ -78,6 +78,16 @@ header {
 			width: 10rem;
 			float: left;
 		}
+		a {
+			text-decoration: none;
+				color: white;
+				font-size: 1.1rem;
+				line-height: 1.5;
+				margin-left: 1rem;
+				&:hover {
+					color: $green;
+				}
+		}
 		nav {
 			float: right;
 			a {
